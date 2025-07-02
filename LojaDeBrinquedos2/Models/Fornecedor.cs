@@ -16,7 +16,4 @@ public class Fornecedor
         Telefone = telefone;
         Endereco = endereco;
     }
-
-
-
 }

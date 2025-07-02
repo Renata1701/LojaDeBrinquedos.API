@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Entrega : ControllerBase
+public class EntregaController : ControllerBase
 {
-    private static List<Entrega> _entregas = new()
+    private static List<EntregaController> _entregas = new()
     {
-        new Entrega
+        new EntregaController
         {
             Id = 1,
             IdPedido = 1,
@@ -45,7 +45,7 @@ public class Entrega : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Create([FromBody] Entrega novaEntrega)
+    public IActionResult Create([FromBody] EntregaController novaEntrega)
     {
         novaEntrega.Id = _entregas.Any() ? _entregas.Max(e => e.Id) + 1 : 1;
         novaEntrega.Status = "Pendente";

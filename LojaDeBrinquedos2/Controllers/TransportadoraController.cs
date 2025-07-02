@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Transportadora : ControllerBase
+public class TransportadoraController : ControllerBase
 {
-    private static List<Transportadora> _transportadoras = new()
+    private static List<TransportadoraController> _transportadoras = new()
     {
-        new Transportadora
+        new TransportadoraController
         {
             Id = 1,
             Nome = "TransBrinquedos LTDA",
@@ -27,13 +27,13 @@ public class Transportadora : ControllerBase
     public required object Email { get;  set; }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Transportadora>> ObterTodas()
+    public ActionResult<IEnumerable<TransportadoraController>> ObterTodas()
     {
         return Ok(_transportadoras);
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Transportadora> ObterPorId(int id)
+    public ActionResult<TransportadoraController> ObterPorId(int id)
     {
         var transportadora = _transportadoras.FirstOrDefault(t => t.Id == id);
         if (transportadora == null)
@@ -44,7 +44,7 @@ public class Transportadora : ControllerBase
 
   
     [HttpPost]
-    public ActionResult<Transportadora> Criar([FromBody] Transportadora nova)
+    public ActionResult<TransportadoraController> Criar([FromBody] TransportadoraController nova)
     {
         nova.Id = _transportadoras.Any() ? _transportadoras.Max(t => t.Id) + 1 : 1;
         _transportadoras.Add(nova);
@@ -53,7 +53,7 @@ public class Transportadora : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult Atualizar(int id, [FromBody] Transportadora atualizada)
+    public IActionResult Atualizar(int id, [FromBody] TransportadoraController atualizada)
     {
         var transportadora = _transportadoras.FirstOrDefault(t => t.Id == id);
         if (transportadora == null)

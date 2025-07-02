@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/CategoriaProduto": {
+    "/api/Categoria": {
       "get": {
         "tags": [
-          "CategoriaProduto"
+          "Categoria"
         ],
         "responses": {
           "200": {
@@ -18,23 +18,23 @@
       },
       "post": {
         "tags": [
-          "CategoriaProduto"
+          "Categoria"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProduto"
+                "$ref": "#/components/schemas/Categoria"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProduto"
+                "$ref": "#/components/schemas/Categoria"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProduto"
+                "$ref": "#/components/schemas/Categoria"
               }
             }
           }
@@ -46,10 +46,10 @@
         }
       }
     },
-    "/api/CategoriaProduto/{id}": {
+    "/api/Categoria/{id}": {
       "get": {
         "tags": [
-          "CategoriaProduto"
+          "Categoria"
         ],
         "parameters": [
           {
@@ -70,7 +70,7 @@
       },
       "put": {
         "tags": [
-          "CategoriaProduto"
+          "Categoria"
         ],
         "parameters": [
           {
@@ -87,17 +87,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProduto"
+                "$ref": "#/components/schemas/Categoria"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProduto"
+                "$ref": "#/components/schemas/Categoria"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProduto"
+                "$ref": "#/components/schemas/Categoria"
               }
             }
           }
@@ -110,7 +110,7 @@
       },
       "delete": {
         "tags": [
-          "CategoriaProduto"
+          "Categoria"
         ],
         "parameters": [
           {
@@ -143,7 +143,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Cliente"
+                    "$ref": "#/components/schemas/ClienteController"
                   }
                 }
               },
@@ -151,7 +151,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Cliente"
+                    "$ref": "#/components/schemas/ClienteController"
                   }
                 }
               },
@@ -159,7 +159,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Cliente"
+                    "$ref": "#/components/schemas/ClienteController"
                   }
                 }
               }
@@ -175,17 +175,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteController"
               }
             }
           }
@@ -196,17 +196,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Cliente"
+                  "$ref": "#/components/schemas/ClienteController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Cliente"
+                  "$ref": "#/components/schemas/ClienteController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Cliente"
+                  "$ref": "#/components/schemas/ClienteController"
                 }
               }
             }
@@ -236,17 +236,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Cliente"
+                  "$ref": "#/components/schemas/ClienteController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Cliente"
+                  "$ref": "#/components/schemas/ClienteController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Cliente"
+                  "$ref": "#/components/schemas/ClienteController"
                 }
               }
             }
@@ -272,17 +272,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteController"
               }
             }
           }
@@ -328,7 +328,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CompraEstoque"
+                    "$ref": "#/components/schemas/CompraEstoqueController"
                   }
                 }
               },
@@ -336,7 +336,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CompraEstoque"
+                    "$ref": "#/components/schemas/CompraEstoqueController"
                   }
                 }
               },
@@ -344,7 +344,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CompraEstoque"
+                    "$ref": "#/components/schemas/CompraEstoqueController"
                   }
                 }
               }
@@ -360,17 +360,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CompraEstoque"
+                "$ref": "#/components/schemas/CompraEstoqueController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CompraEstoque"
+                "$ref": "#/components/schemas/CompraEstoqueController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CompraEstoque"
+                "$ref": "#/components/schemas/CompraEstoqueController"
               }
             }
           }
@@ -381,17 +381,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/CompraEstoque"
+                  "$ref": "#/components/schemas/CompraEstoqueController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CompraEstoque"
+                  "$ref": "#/components/schemas/CompraEstoqueController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CompraEstoque"
+                  "$ref": "#/components/schemas/CompraEstoqueController"
                 }
               }
             }
@@ -421,17 +421,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/CompraEstoque"
+                  "$ref": "#/components/schemas/CompraEstoqueController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CompraEstoque"
+                  "$ref": "#/components/schemas/CompraEstoqueController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CompraEstoque"
+                  "$ref": "#/components/schemas/CompraEstoqueController"
                 }
               }
             }
@@ -457,17 +457,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CompraEstoque"
+                "$ref": "#/components/schemas/CompraEstoqueController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CompraEstoque"
+                "$ref": "#/components/schemas/CompraEstoqueController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CompraEstoque"
+                "$ref": "#/components/schemas/CompraEstoqueController"
               }
             }
           }
@@ -519,17 +519,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CupomDeDesconto"
+                "$ref": "#/components/schemas/CupomDeDescontoController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CupomDeDesconto"
+                "$ref": "#/components/schemas/CupomDeDescontoController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CupomDeDesconto"
+                "$ref": "#/components/schemas/CupomDeDescontoController"
               }
             }
           }
@@ -582,17 +582,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CupomDeDesconto"
+                "$ref": "#/components/schemas/CupomDeDescontoController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CupomDeDesconto"
+                "$ref": "#/components/schemas/CupomDeDescontoController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CupomDeDesconto"
+                "$ref": "#/components/schemas/CupomDeDescontoController"
               }
             }
           }
@@ -644,17 +644,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Entrega"
+                "$ref": "#/components/schemas/EntregaController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Entrega"
+                "$ref": "#/components/schemas/EntregaController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Entrega"
+                "$ref": "#/components/schemas/EntregaController"
               }
             }
           }
@@ -769,17 +769,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Estoque"
+                "$ref": "#/components/schemas/EstoqueController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Estoque"
+                "$ref": "#/components/schemas/EstoqueController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Estoque"
+                "$ref": "#/components/schemas/EstoqueController"
               }
             }
           }
@@ -839,17 +839,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Estoque"
+                "$ref": "#/components/schemas/EstoqueController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Estoque"
+                "$ref": "#/components/schemas/EstoqueController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Estoque"
+                "$ref": "#/components/schemas/EstoqueController"
               }
             }
           }
@@ -900,17 +900,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Fornecedor"
+                "$ref": "#/components/schemas/FornecedorController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Fornecedor"
+                "$ref": "#/components/schemas/FornecedorController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Fornecedor"
+                "$ref": "#/components/schemas/FornecedorController"
               }
             }
           }
@@ -963,17 +963,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Fornecedor"
+                "$ref": "#/components/schemas/FornecedorController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Fornecedor"
+                "$ref": "#/components/schemas/FornecedorController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Fornecedor"
+                "$ref": "#/components/schemas/FornecedorController"
               }
             }
           }
@@ -1019,7 +1019,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Frete"
+                    "$ref": "#/components/schemas/FreteController"
                   }
                 }
               },
@@ -1027,7 +1027,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Frete"
+                    "$ref": "#/components/schemas/FreteController"
                   }
                 }
               },
@@ -1035,7 +1035,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Frete"
+                    "$ref": "#/components/schemas/FreteController"
                   }
                 }
               }
@@ -1051,17 +1051,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Frete"
+                "$ref": "#/components/schemas/FreteController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Frete"
+                "$ref": "#/components/schemas/FreteController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Frete"
+                "$ref": "#/components/schemas/FreteController"
               }
             }
           }
@@ -1072,17 +1072,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Frete"
+                  "$ref": "#/components/schemas/FreteController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Frete"
+                  "$ref": "#/components/schemas/FreteController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Frete"
+                  "$ref": "#/components/schemas/FreteController"
                 }
               }
             }
@@ -1112,17 +1112,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Frete"
+                  "$ref": "#/components/schemas/FreteController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Frete"
+                  "$ref": "#/components/schemas/FreteController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Frete"
+                  "$ref": "#/components/schemas/FreteController"
                 }
               }
             }
@@ -1148,17 +1148,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Frete"
+                "$ref": "#/components/schemas/FreteController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Frete"
+                "$ref": "#/components/schemas/FreteController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Frete"
+                "$ref": "#/components/schemas/FreteController"
               }
             }
           }
@@ -1204,7 +1204,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Funcionarios"
+                    "$ref": "#/components/schemas/FuncionariosController"
                   }
                 }
               },
@@ -1212,7 +1212,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Funcionarios"
+                    "$ref": "#/components/schemas/FuncionariosController"
                   }
                 }
               },
@@ -1220,7 +1220,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Funcionarios"
+                    "$ref": "#/components/schemas/FuncionariosController"
                   }
                 }
               }
@@ -1236,17 +1236,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Funcionarios"
+                "$ref": "#/components/schemas/FuncionariosController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Funcionarios"
+                "$ref": "#/components/schemas/FuncionariosController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Funcionarios"
+                "$ref": "#/components/schemas/FuncionariosController"
               }
             }
           }
@@ -1257,17 +1257,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Funcionarios"
+                  "$ref": "#/components/schemas/FuncionariosController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Funcionarios"
+                  "$ref": "#/components/schemas/FuncionariosController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Funcionarios"
+                  "$ref": "#/components/schemas/FuncionariosController"
                 }
               }
             }
@@ -1297,17 +1297,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Funcionarios"
+                  "$ref": "#/components/schemas/FuncionariosController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Funcionarios"
+                  "$ref": "#/components/schemas/FuncionariosController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Funcionarios"
+                  "$ref": "#/components/schemas/FuncionariosController"
                 }
               }
             }
@@ -1333,17 +1333,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Funcionarios"
+                "$ref": "#/components/schemas/FuncionariosController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Funcionarios"
+                "$ref": "#/components/schemas/FuncionariosController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Funcionarios"
+                "$ref": "#/components/schemas/FuncionariosController"
               }
             }
           }
@@ -1389,7 +1389,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ItensComprados"
+                    "$ref": "#/components/schemas/ItensCompradosController"
                   }
                 }
               },
@@ -1397,7 +1397,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ItensComprados"
+                    "$ref": "#/components/schemas/ItensCompradosController"
                   }
                 }
               },
@@ -1405,7 +1405,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ItensComprados"
+                    "$ref": "#/components/schemas/ItensCompradosController"
                   }
                 }
               }
@@ -1421,17 +1421,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ItensComprados"
+                "$ref": "#/components/schemas/ItensCompradosController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ItensComprados"
+                "$ref": "#/components/schemas/ItensCompradosController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ItensComprados"
+                "$ref": "#/components/schemas/ItensCompradosController"
               }
             }
           }
@@ -1442,17 +1442,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ItensComprados"
+                  "$ref": "#/components/schemas/ItensCompradosController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ItensComprados"
+                  "$ref": "#/components/schemas/ItensCompradosController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ItensComprados"
+                  "$ref": "#/components/schemas/ItensCompradosController"
                 }
               }
             }
@@ -1482,17 +1482,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ItensComprados"
+                  "$ref": "#/components/schemas/ItensCompradosController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ItensComprados"
+                  "$ref": "#/components/schemas/ItensCompradosController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ItensComprados"
+                  "$ref": "#/components/schemas/ItensCompradosController"
                 }
               }
             }
@@ -1518,17 +1518,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ItensComprados"
+                "$ref": "#/components/schemas/ItensCompradosController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ItensComprados"
+                "$ref": "#/components/schemas/ItensCompradosController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ItensComprados"
+                "$ref": "#/components/schemas/ItensCompradosController"
               }
             }
           }
@@ -1553,7 +1553,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Loja"
+                    "$ref": "#/components/schemas/LojaController"
                   }
                 }
               },
@@ -1561,7 +1561,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Loja"
+                    "$ref": "#/components/schemas/LojaController"
                   }
                 }
               },
@@ -1569,7 +1569,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Loja"
+                    "$ref": "#/components/schemas/LojaController"
                   }
                 }
               }
@@ -1585,17 +1585,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Loja"
+                "$ref": "#/components/schemas/LojaController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Loja"
+                "$ref": "#/components/schemas/LojaController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Loja"
+                "$ref": "#/components/schemas/LojaController"
               }
             }
           }
@@ -1606,17 +1606,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Loja"
+                  "$ref": "#/components/schemas/LojaController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Loja"
+                  "$ref": "#/components/schemas/LojaController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Loja"
+                  "$ref": "#/components/schemas/LojaController"
                 }
               }
             }
@@ -1646,17 +1646,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Loja"
+                  "$ref": "#/components/schemas/LojaController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Loja"
+                  "$ref": "#/components/schemas/LojaController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Loja"
+                  "$ref": "#/components/schemas/LojaController"
                 }
               }
             }
@@ -1682,17 +1682,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Loja"
+                "$ref": "#/components/schemas/LojaController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Loja"
+                "$ref": "#/components/schemas/LojaController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Loja"
+                "$ref": "#/components/schemas/LojaController"
               }
             }
           }
@@ -1744,17 +1744,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewsLetter"
+                "$ref": "#/components/schemas/NewsLetterController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewsLetter"
+                "$ref": "#/components/schemas/NewsLetterController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/NewsLetter"
+                "$ref": "#/components/schemas/NewsLetterController"
               }
             }
           }
@@ -1802,7 +1802,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pagamento"
+                    "$ref": "#/components/schemas/PagamentoController"
                   }
                 }
               },
@@ -1810,7 +1810,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pagamento"
+                    "$ref": "#/components/schemas/PagamentoController"
                   }
                 }
               },
@@ -1818,7 +1818,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pagamento"
+                    "$ref": "#/components/schemas/PagamentoController"
                   }
                 }
               }
@@ -1855,17 +1855,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pagamento"
+                  "$ref": "#/components/schemas/PagamentoController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pagamento"
+                  "$ref": "#/components/schemas/PagamentoController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pagamento"
+                  "$ref": "#/components/schemas/PagamentoController"
                 }
               }
             }
@@ -1895,17 +1895,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pagamento"
+                  "$ref": "#/components/schemas/PagamentoController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pagamento"
+                  "$ref": "#/components/schemas/PagamentoController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pagamento"
+                  "$ref": "#/components/schemas/PagamentoController"
                 }
               }
             }
@@ -1987,7 +1987,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoController"
                   }
                 }
               },
@@ -1995,7 +1995,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoController"
                   }
                 }
               },
@@ -2003,7 +2003,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoController"
                   }
                 }
               }
@@ -2040,17 +2040,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoController"
                 }
               }
             }
@@ -2080,17 +2080,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoController"
                 }
               }
             }
@@ -2159,7 +2159,7 @@
         }
       }
     },
-    "/api/Produtos": {
+    "/api/Produtos/listar": {
       "get": {
         "tags": [
           "Produtos"
@@ -2169,7 +2169,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Produtos/adicionar": {
       "post": {
         "tags": [
           "Produtos"
@@ -2200,28 +2202,7 @@
         }
       }
     },
-    "/api/Produtos/{id}": {
-      "get": {
-        "tags": [
-          "Produtos"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
+    "/api/Produtos/editar/{id}": {
       "put": {
         "tags": [
           "Produtos"
@@ -2261,7 +2242,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Produtos/deletar/{id}": {
       "delete": {
         "tags": [
           "Produtos"
@@ -2479,6 +2462,30 @@
         }
       }
     },
+    "/api/Teste/conexao": {
+      "get": {
+        "tags": [
+          "Teste"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Teste/categorias": {
+      "get": {
+        "tags": [
+          "Teste"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Transportadora": {
       "get": {
         "tags": [
@@ -2492,7 +2499,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Transportadora"
+                    "$ref": "#/components/schemas/TransportadoraController"
                   }
                 }
               },
@@ -2500,7 +2507,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Transportadora"
+                    "$ref": "#/components/schemas/TransportadoraController"
                   }
                 }
               },
@@ -2508,7 +2515,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Transportadora"
+                    "$ref": "#/components/schemas/TransportadoraController"
                   }
                 }
               }
@@ -2524,17 +2531,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transportadora"
+                "$ref": "#/components/schemas/TransportadoraController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transportadora"
+                "$ref": "#/components/schemas/TransportadoraController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Transportadora"
+                "$ref": "#/components/schemas/TransportadoraController"
               }
             }
           }
@@ -2545,17 +2552,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Transportadora"
+                  "$ref": "#/components/schemas/TransportadoraController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Transportadora"
+                  "$ref": "#/components/schemas/TransportadoraController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Transportadora"
+                  "$ref": "#/components/schemas/TransportadoraController"
                 }
               }
             }
@@ -2585,17 +2592,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Transportadora"
+                  "$ref": "#/components/schemas/TransportadoraController"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Transportadora"
+                  "$ref": "#/components/schemas/TransportadoraController"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Transportadora"
+                  "$ref": "#/components/schemas/TransportadoraController"
                 }
               }
             }
@@ -2621,17 +2628,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transportadora"
+                "$ref": "#/components/schemas/TransportadoraController"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transportadora"
+                "$ref": "#/components/schemas/TransportadoraController"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Transportadora"
+                "$ref": "#/components/schemas/TransportadoraController"
               }
             }
           }
@@ -3078,66 +3085,20 @@
         },
         "additionalProperties": false
       },
-      "CategoriaProduto": {
-        "required": [
-          "nome"
-        ],
+      "Categoria": {
         "type": "object",
         "properties": {
-          "httpContext": {
-            "$ref": "#/components/schemas/HttpContext"
-          },
-          "request": {
-            "$ref": "#/components/schemas/HttpRequest"
-          },
-          "response": {
-            "$ref": "#/components/schemas/HttpResponse"
-          },
-          "routeData": {
-            "$ref": "#/components/schemas/RouteData"
-          },
-          "modelState": {
-            "type": "object",
-            "additionalProperties": {
-              "$ref": "#/components/schemas/ModelStateEntry"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "controllerContext": {
-            "$ref": "#/components/schemas/ControllerContext"
-          },
-          "metadataProvider": {
-            "$ref": "#/components/schemas/IModelMetadataProvider"
-          },
-          "modelBinderFactory": {
-            "$ref": "#/components/schemas/IModelBinderFactory"
-          },
-          "url": {
-            "$ref": "#/components/schemas/IUrlHelper"
-          },
-          "objectValidator": {
-            "$ref": "#/components/schemas/IObjectModelValidator"
-          },
-          "problemDetailsFactory": {
-            "$ref": "#/components/schemas/ProblemDetailsFactory"
-          },
-          "user": {
-            "$ref": "#/components/schemas/ClaimsPrincipal"
-          },
           "id": {
             "type": "integer",
-            "format": "int32",
-            "readOnly": true
+            "format": "int32"
           },
           "nome": {
             "type": "string",
             "nullable": true
           },
-          "tipo": {
+          "descricao": {
             "type": "string",
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -3257,7 +3218,7 @@
         },
         "additionalProperties": false
       },
-      "Cliente": {
+      "ClienteController": {
         "required": [
           "cpf",
           "email",
@@ -3339,7 +3300,7 @@
         },
         "additionalProperties": false
       },
-      "CompraEstoque": {
+      "CompraEstoqueController": {
         "required": [
           "dataCompra",
           "fornecedorId",
@@ -3675,7 +3636,7 @@
         },
         "additionalProperties": false
       },
-      "CupomDeDesconto": {
+      "CupomDeDescontoController": {
         "type": "object",
         "properties": {
           "httpContext": {
@@ -3833,7 +3794,7 @@
         "type": "integer",
         "format": "int32"
       },
-      "Entrega": {
+      "EntregaController": {
         "required": [
           "codigoRastreio",
           "dataEntrega",
@@ -3913,7 +3874,7 @@
         },
         "additionalProperties": false
       },
-      "Estoque": {
+      "EstoqueController": {
         "type": "object",
         "properties": {
           "httpContext": {
@@ -4225,7 +4186,7 @@
         },
         "additionalProperties": false
       },
-      "Fornecedor": {
+      "FornecedorController": {
         "required": [
           "nome"
         ],
@@ -4298,7 +4259,7 @@
         },
         "additionalProperties": false
       },
-      "Frete": {
+      "FreteController": {
         "required": [
           "idEntrega",
           "prazoEstimado",
@@ -4367,7 +4328,7 @@
         },
         "additionalProperties": false
       },
-      "Funcionarios": {
+      "FuncionariosController": {
         "required": [
           "cargo",
           "cpf",
@@ -4831,7 +4792,7 @@
         "type": "object",
         "additionalProperties": false
       },
-      "ItensComprados": {
+      "ItensCompradosController": {
         "required": [
           "pedidoId",
           "precoUnitario",
@@ -4928,7 +4889,7 @@
         "type": "integer",
         "format": "int32"
       },
-      "Loja": {
+      "LojaController": {
         "required": [
           "cnpj",
           "endereco",
@@ -5516,7 +5477,7 @@
         },
         "additionalProperties": false
       },
-      "NewsLetter": {
+      "NewsLetterController": {
         "type": "object",
         "properties": {
           "httpContext": {
@@ -5587,7 +5548,7 @@
         },
         "additionalProperties": false
       },
-      "Pagamento": {
+      "PagamentoController": {
         "required": [
           "status",
           "tipoPagamento"
@@ -5800,7 +5761,7 @@
         },
         "additionalProperties": false
       },
-      "Pedido": {
+      "PedidoController": {
         "required": [
           "formaPagamento",
           "status"
@@ -5937,25 +5898,17 @@
             "type": "number",
             "format": "double"
           },
-          "categoria": {
-            "type": "string",
-            "nullable": true
-          },
-          "imagemUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "codigoBarras": {
-            "type": "string",
-            "nullable": true
-          },
-          "marca": {
-            "nullable": true,
-            "readOnly": true
-          },
           "categoriaId": {
-            "nullable": true,
-            "readOnly": true
+            "type": "integer",
+            "format": "int32"
+          },
+          "fornecedorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estoque": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -6189,7 +6142,7 @@
         },
         "additionalProperties": false
       },
-      "Transportadora": {
+      "TransportadoraController": {
         "required": [
           "cnpj",
           "contato",

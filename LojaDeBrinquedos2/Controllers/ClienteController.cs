@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Cliente : ControllerBase
+public class ClienteController : ControllerBase
 {
-    private static readonly List<Cliente> _clientes = new()
+    private static readonly List<ClienteController> _clientes = new()
     {
-        new Cliente
+        new ClienteController
         {
             Id = 1,
             Nome = "Ana Pereira",
@@ -18,7 +18,7 @@ public class Cliente : ControllerBase
             Endereco = "Rua das Flores, 10 - Centro",
             DataCadastro = DateTime.Now.AddDays(-12)
         },
-        new Cliente
+        new ClienteController
         {
             Id = 2,
             Nome = "Bruno Costa",
@@ -28,7 +28,7 @@ public class Cliente : ControllerBase
             Endereco = "Av. Brasil, 555 - Bairro Novo",
             DataCadastro = DateTime.Now.AddDays(-7)
         },
-        new Cliente
+        new ClienteController
         {
             Id = 3,
             Nome = "Cláudia Lima",
@@ -49,13 +49,13 @@ public class Cliente : ControllerBase
     public DateTime DataCadastro { get; set; }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Cliente>> ObterTodos()
+    public ActionResult<IEnumerable<ClienteController>> ObterTodos()
     {
         return Ok(_clientes);
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Cliente> ObterPorId(int id)
+    public ActionResult<ClienteController> ObterPorId(int id)
     {
         var cliente = _clientes.FirstOrDefault(c => c.Id == id);
         if (cliente == null)
@@ -65,7 +65,7 @@ public class Cliente : ControllerBase
     }
 
     [HttpPost]
-    public ActionResult<Cliente> Criar([FromBody] Cliente novo)
+    public ActionResult<ClienteController> Criar([FromBody] ClienteController novo)
     {
         novo.Id = _clientes.Any() ? _clientes.Max(c => c.Id) + 1 : 1;
         novo.DataCadastro = DateTime.Now;
@@ -74,7 +74,7 @@ public class Cliente : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult Atualizar(int id, [FromBody] Cliente atualizado)
+    public IActionResult Atualizar(int id, [FromBody] ClienteController atualizado)
     {
         var cliente = _clientes.FirstOrDefault(c => c.Id == id);
         if (cliente == null)

@@ -1,4 +1,5 @@
-﻿namespace LojaDeBrinquedos2.Classes;
+﻿
+using LojaDeBrinquedos2.Classes;
 
 public class Cliente(string Nome, string Cpf, string Email, string Telefone, string Endereco, string DataCadastro)
 {

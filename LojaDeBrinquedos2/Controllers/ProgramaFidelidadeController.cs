@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class ProgramaFidelidade : ControllerBase
+public class ProgramaFidelidadeController : ControllerBase
 {
     private static List<ClienteFidelidade> clientesFidelidade = new List<ClienteFidelidade>
     {

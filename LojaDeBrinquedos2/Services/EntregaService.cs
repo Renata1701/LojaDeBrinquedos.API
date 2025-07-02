@@ -5,7 +5,6 @@ public class EntregaService
 
     private readonly List<EntregaService> _entregas = new();
     private int Id;
-
     public required object PedidoId { get; set; }
     public required object TransportadoraId { get;  set; }
     public required object Status { get; set; }
@@ -43,7 +42,6 @@ public class EntregaService
 
         return existing;
     }
-
     public bool Delete(int id)
     {
         var entrega = _entregas.FirstOrDefault(e => e.Id == id);

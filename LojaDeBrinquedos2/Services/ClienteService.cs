@@ -40,7 +40,6 @@ public class ClienteService
 
         return existing;
     }
-
     public bool Delete(int id)
     {
         var cliente = _clientes.FirstOrDefault(c => c.Id == id);

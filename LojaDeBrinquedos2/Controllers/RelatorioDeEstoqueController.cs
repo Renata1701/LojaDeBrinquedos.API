@@ -6,27 +6,25 @@ using System.Reflection;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class RelatorioDeEstoque : ControllerBase
+public class RelatorioDeEstoqueController : ControllerBase
 { 
       public int ProdutoId { get; set; }
     public string NomeProduto { get; set; }
     public int Quantidade { get; set; }
 
-    public RelatorioDeEstoque(int produtoId, string nomeProduto, int quantidade)
+    public RelatorioDeEstoqueController(int produtoId, string nomeProduto, int quantidade)
     {
         ProdutoId = produtoId;
         NomeProduto = nomeProduto;
         Quantidade = quantidade;
     }
-    
 
-
-    private static List<Estoque> _estoques = new()
+    private static List<EstoqueController> _estoques = new()
     {
-            new Estoque(1, "Carrinho Controle Remoto", 15),
-            new Estoque(2, "Boneca Fashion", 3),
-            new Estoque(3, "Jogo Educativo", 0),
-            new Estoque(4, "Pista Hot Wheels", 20),
+            new EstoqueController(1, "Carrinho Controle Remoto", 15),
+            new EstoqueController(2, "Boneca Fashion", 3),
+            new EstoqueController(3, "Jogo Educativo", 0),
+            new EstoqueController(4, "Pista Hot Wheels", 20),
     };
 
     [HttpGet]

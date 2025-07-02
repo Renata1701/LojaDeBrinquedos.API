@@ -3,11 +3,11 @@
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Funcionarios : ControllerBase
+public class FuncionariosController : ControllerBase
 {
-    private static List<Funcionarios> _funcionarios = new()
+    private static List<FuncionariosController> _funcionarios = new()
     {
-        new Funcionarios
+        new FuncionariosController
         {
             Id = 1,
             Nome = "Ana Souza",
@@ -31,14 +31,14 @@ public class Funcionarios : ControllerBase
 
   
     [HttpGet]
-    public ActionResult<IEnumerable<Funcionarios>> ObterTodos()
+    public ActionResult<IEnumerable<FuncionariosController>> ObterTodos()
     {
         return Ok(_funcionarios);
     }
 
    
     [HttpGet("{id}")]
-    public ActionResult<Funcionarios> ObterPorId(int id)
+    public ActionResult<FuncionariosController> ObterPorId(int id)
     {
         var funcionario = _funcionarios.FirstOrDefault(f => f.Id == id);
         if (funcionario == null)
@@ -48,7 +48,7 @@ public class Funcionarios : ControllerBase
     }
 
     [HttpPost]
-    public ActionResult<Funcionarios> Criar([FromBody] Funcionarios novo)
+    public ActionResult<FuncionariosController> Criar([FromBody] FuncionariosController novo)
     {
         novo.Id = _funcionarios.Any() ? _funcionarios.Max(f => f.Id) + 1 : 1;
         _funcionarios.Add(novo);
@@ -57,7 +57,7 @@ public class Funcionarios : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult Atualizar(int id, [FromBody] Funcionarios atualizado)
+    public IActionResult Atualizar(int id, [FromBody] FuncionariosController atualizado)
     {
         var funcionario = _funcionarios.FirstOrDefault(f => f.Id == id);
         if (funcionario == null)

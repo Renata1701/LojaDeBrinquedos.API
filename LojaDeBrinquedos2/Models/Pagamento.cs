@@ -15,13 +15,5 @@ public class Pagamento
     this.Status = Status;
     this.Data = Data;
     this.ValorTotal = ValorTotal;
-    
-    
     }
-
-
-
-
-
-
 }

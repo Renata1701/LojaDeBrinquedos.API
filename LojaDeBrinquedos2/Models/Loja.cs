@@ -17,7 +17,4 @@ public class Loja
      this.Responsavel = Responsavel;
     
     }
-
-
-
 }

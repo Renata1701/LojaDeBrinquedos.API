@@ -15,11 +15,6 @@ public required string Valor { get; set; }
         this.Valor = Valor;
         this.Validade = Validade;
         this.Status = Status;
-    
-    
-    
     }
-
-
 
 }

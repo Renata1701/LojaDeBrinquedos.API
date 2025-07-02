@@ -23,7 +23,6 @@ C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos
 C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos2\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos2\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos2\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos2\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos2\obj\Debug\net8.0\LojaDeBr.7C0980B4.Up2Date
 C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos2\obj\Debug\net8.0\LojaDeBrinquedos2.dll
 C:\Users\renat\OneDrive\Documentos\ProjetoApi\LojaDeBrinquedos2\LojaDeBrinquedos2\obj\Debug\net8.0\refint\LojaDeBrinquedos2.dll

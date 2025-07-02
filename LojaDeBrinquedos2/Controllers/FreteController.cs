@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Frete : ControllerBase
+public class FreteController : ControllerBase
 {
-    private static List<Frete> _fretes = new()
+    private static List<FreteController> _fretes = new()
     {
-        new Frete
+        new FreteController
         {
             Id = 1,
             IdEntrega = 1,
@@ -26,14 +26,14 @@ public class Frete : ControllerBase
 
   
     [HttpGet]
-    public ActionResult<IEnumerable<Frete>> ObterTodos()
+    public ActionResult<IEnumerable<FreteController>> ObterTodos()
     {
         return Ok(_fretes);
     }
 
 
     [HttpGet("{id}")]
-    public ActionResult<Frete> ObterPorId(int id)
+    public ActionResult<FreteController> ObterPorId(int id)
     {
         var frete = _fretes.FirstOrDefault(f => f.Id == id);
         if (frete == null)
@@ -44,7 +44,7 @@ public class Frete : ControllerBase
 
    
     [HttpPost]
-    public ActionResult<Frete> Criar([FromBody] Frete novo)
+    public ActionResult<FreteController> Criar([FromBody] FreteController novo)
     {
         novo.Id = _fretes.Any() ? _fretes.Max(f => f.Id) + 1 : 1;
         _fretes.Add(novo);
@@ -54,7 +54,7 @@ public class Frete : ControllerBase
 
  
     [HttpPut("{id}")]
-    public IActionResult Atualizar(int id, [FromBody] Frete atualizado)
+    public IActionResult Atualizar(int id, [FromBody] FreteController atualizado)
     {
         var frete = _fretes.FirstOrDefault(f => f.Id == id);
         if (frete == null)

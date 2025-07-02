@@ -15,5 +15,4 @@ public class Frete
      this.Prazo = Prazo;
      this.TipoEnvio = TipoEnvio;
     }
-
 }

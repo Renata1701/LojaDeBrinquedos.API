@@ -11,7 +11,6 @@ public class  CategoriaProdutoService
     {
         return _categorias.FirstOrDefault(c => c.Id == id);
     }
-
     public CategoriaProduto Create(CategoriaProduto categoria)
     {
         categoria.Id = _categorias.Count + 1;

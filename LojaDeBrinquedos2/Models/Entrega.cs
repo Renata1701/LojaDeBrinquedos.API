@@ -15,9 +15,5 @@ public class Entrega
         this.status = status;
         this.CodigoRastreio = CodigoRastreio;
         this.Datas = Datas;
-
     }
-
-
-
 }

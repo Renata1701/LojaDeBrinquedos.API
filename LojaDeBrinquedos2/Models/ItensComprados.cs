@@ -2,7 +2,6 @@
 
 public class ItensComprados
 {
- 
         public int Id { get; set; }
         public int ProdutoId { get; set; }
         public int Quantidade { get; set; }
@@ -14,11 +13,5 @@ public class ItensComprados
         this.ProdutoId = ProdutoId;
         this.Quantidade = Quantidade;
         this.PrecoUnitario = PrecoUnitario;
-
-    
-    
     }
-
-
-
 }

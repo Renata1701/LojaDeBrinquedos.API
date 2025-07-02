@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Pagamento : ControllerBase
+public class PagamentoController : ControllerBase
 {
-    private static readonly List<Pagamento> _pagamentos = new()
+    private static readonly List<PagamentoController> _pagamentos = new()
     {
-        new Pagamento
+        new PagamentoController
         {
             Id = 1,
             IdPedido = 1,
@@ -28,14 +28,14 @@ public class Pagamento : ControllerBase
 
     
     [HttpGet]
-    public ActionResult<IEnumerable<Pagamento>> ObterTodos()
+    public ActionResult<IEnumerable<PagamentoController>> ObterTodos()
     {
         return Ok(_pagamentos);
     }
 
    
     [HttpGet("{id}")]
-    public ActionResult<Pagamento> ObterPorId(int id)
+    public ActionResult<PagamentoController> ObterPorId(int id)
     {
         var pagamento = _pagamentos.FirstOrDefault(p => p.Id == id);
         if (pagamento == null)
@@ -46,9 +46,9 @@ public class Pagamento : ControllerBase
 
    
     [HttpPost]
-    public ActionResult<Pagamento> Criar([FromBody] PagamentoCreateDto novoPagamento)
+    public ActionResult<PagamentoController> Criar([FromBody] PagamentoCreateDto novoPagamento)
     {
-        var pagamento = new Pagamento
+        var pagamento = new PagamentoController
         {
             Id = _pagamentos.Any() ? _pagamentos.Max(p => p.Id) + 1 : 1,
             IdPedido = novoPagamento.IdPedido,

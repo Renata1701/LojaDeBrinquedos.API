@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class NewsLetter : ControllerBase
+public class NewsLetterController : ControllerBase
 {
 
-    private static List<NewsLetter> _inscritos = new();
+    private static List<NewsLetterController> _inscritos = new();
     private static int _proximoId = 1;
 
     public string? Email { get; private set; }
@@ -20,7 +20,7 @@ public class NewsLetter : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Cadastrar([FromBody] NewsLetter novo)
+    public IActionResult Cadastrar([FromBody] NewsLetterController novo)
     {
         if (string.IsNullOrWhiteSpace(novo.Email))
             return BadRequest("Email é obrigatório.");

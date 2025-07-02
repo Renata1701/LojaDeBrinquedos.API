@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Pedido : ControllerBase
+public class PedidoController : ControllerBase
 {
-    private static readonly List<Pedido> _pedidos = new()
+    private static readonly List<PedidoController> _pedidos = new()
     {
-        new Pedido
+        new PedidoController
         {
             Id = 1,
             IdCliente = 1,
@@ -17,7 +17,7 @@ public class Pedido : ControllerBase
             FormaPagamento = "Cartão",
             ValorTotal = 150.00m
         },
-        new Pedido
+        new PedidoController
         {
             Id = 2,
             IdCliente = 2,
@@ -36,13 +36,13 @@ public class Pedido : ControllerBase
     public decimal ValorTotal { get; set; }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Pedido>> ObterTodos()
+    public ActionResult<IEnumerable<PedidoController>> ObterTodos()
     {
         return Ok(_pedidos);
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Pedido> ObterPorId(int id)
+    public ActionResult<PedidoController> ObterPorId(int id)
     {
         var pedido = _pedidos.FirstOrDefault(p => p.Id == id);
         if (pedido == null) return NotFound(new { mensagem = "Pedido não encontrado." });
@@ -52,9 +52,9 @@ public class Pedido : ControllerBase
 
     
     [HttpPost]
-    public ActionResult<Pedido> Criar([FromBody] PedidoCreateDto novoDto)
+    public ActionResult<PedidoController> Criar([FromBody] PedidoCreateDto novoDto)
     {
-        var novoPedido = new Pedido
+        var novoPedido = new PedidoController
         {
             Id = _pedidos.Any() ? _pedidos.Max(p => p.Id) + 1 : 1,
             IdCliente = novoDto.IdCliente,

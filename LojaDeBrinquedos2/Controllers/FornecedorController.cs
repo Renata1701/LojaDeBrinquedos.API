@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers.Produtos;
 [Route("api/[controller]")]
 [ApiController]
-public class Fornecedor : ControllerBase
+public class FornecedorController : ControllerBase
 {
-    private static List<Fornecedor> fornecedores = new List<Fornecedor>
+    private static List<FornecedorController> fornecedores = new List<FornecedorController>
         {
-            new Fornecedor { Id = 1, Nome = "Fornecedor A", Cnpj = "12345678000100", Telefone = "(31) 99999-9999", Email = "contato@fornecedora.com" }
+            new FornecedorController { Id = 1, Nome = "Fornecedor A", Cnpj = "12345678000100", Telefone = "(31) 99999-9999", Email = "contato@fornecedora.com" }
         };
 
     public int Id { get; set; }
@@ -17,14 +17,12 @@ public class Fornecedor : ControllerBase
     public string? Telefone { get; private set; }
     public string? Email { get; private set; }
 
-    
     [HttpGet]
     public IActionResult ListarFornecedores()
     {
         return Ok(fornecedores);
     }
 
-   
     [HttpGet("{id}")]
     public IActionResult ObterFornecedor(int id)
     {
@@ -35,9 +33,8 @@ public class Fornecedor : ControllerBase
         return Ok(fornecedor);
     }
 
-    
     [HttpPost]
-    public IActionResult CriarFornecedor([FromBody] Fornecedor novoFornecedor)
+    public IActionResult CriarFornecedor([FromBody] FornecedorController novoFornecedor)
     {
         if (novoFornecedor == null || string.IsNullOrWhiteSpace(novoFornecedor.Nome))
             return BadRequest(new { mensagem = "Dados do fornecedor são inválidos." });
@@ -51,7 +48,7 @@ public class Fornecedor : ControllerBase
 
     
     [HttpPut("{id}")]
-    public IActionResult AtualizarFornecedor(int id, [FromBody] Fornecedor fornecedorAtualizado)
+    public IActionResult AtualizarFornecedor(int id, [FromBody] FornecedorController fornecedorAtualizado)
     {
         var fornecedor = fornecedores.FirstOrDefault(f => f.Id == id);
         if (fornecedor == null)

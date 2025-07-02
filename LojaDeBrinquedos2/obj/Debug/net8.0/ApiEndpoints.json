@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaProduto",
-    "Method": "ListarCategorias",
-    "RelativePath": "api/CategoriaProduto",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaController",
+    "Method": "GetCategorias",
+    "RelativePath": "api/Categoria",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,25 +10,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaProduto",
-    "Method": "CriarCategoria",
-    "RelativePath": "api/CategoriaProduto",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaController",
+    "Method": "Adicionar",
+    "RelativePath": "api/Categoria",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "novaCategoria",
-        "Type": "LojaDeBrinquedos2.Controllers.CategoriaProduto",
+        "Type": "LojaDeBrinquedos2.Controllers.Categoria",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaProduto",
-    "Method": "ObterCategoria",
-    "RelativePath": "api/CategoriaProduto/{id}",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaController",
+    "Method": "GetPorId",
+    "RelativePath": "api/Categoria/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -42,9 +42,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaProduto",
-    "Method": "AtualizarCategoria",
-    "RelativePath": "api/CategoriaProduto/{id}",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Categoria/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -55,17 +55,17 @@
         "IsRequired": true
       },
       {
-        "Name": "categoriaAtualizada",
-        "Type": "LojaDeBrinquedos2.Controllers.CategoriaProduto",
+        "Name": "categoria",
+        "Type": "LojaDeBrinquedos2.Controllers.Categoria",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaProduto",
-    "Method": "ExcluirCategoria",
-    "RelativePath": "api/CategoriaProduto/{id}",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CategoriaController",
+    "Method": "Deletar",
+    "RelativePath": "api/Categoria/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -79,7 +79,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Cliente",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ClienteController",
     "Method": "ObterTodos",
     "RelativePath": "api/Cliente",
     "HttpMethod": "GET",
@@ -88,7 +88,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.Cliente, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.ClienteController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -99,7 +99,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Cliente",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ClienteController",
     "Method": "Criar",
     "RelativePath": "api/Cliente",
     "HttpMethod": "POST",
@@ -108,13 +108,13 @@
     "Parameters": [
       {
         "Name": "novo",
-        "Type": "LojaDeBrinquedos2.Controllers.Cliente",
+        "Type": "LojaDeBrinquedos2.Controllers.ClienteController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Cliente",
+        "Type": "LojaDeBrinquedos2.Controllers.ClienteController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -125,7 +125,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Cliente",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ClienteController",
     "Method": "ObterPorId",
     "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "GET",
@@ -140,7 +140,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Cliente",
+        "Type": "LojaDeBrinquedos2.Controllers.ClienteController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -151,7 +151,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Cliente",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ClienteController",
     "Method": "Atualizar",
     "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "PUT",
@@ -165,14 +165,14 @@
       },
       {
         "Name": "atualizado",
-        "Type": "LojaDeBrinquedos2.Controllers.Cliente",
+        "Type": "LojaDeBrinquedos2.Controllers.ClienteController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Cliente",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ClienteController",
     "Method": "Deletar",
     "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "DELETE",
@@ -188,7 +188,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
     "Method": "GetAll",
     "RelativePath": "api/CompraEstoque",
     "HttpMethod": "GET",
@@ -197,7 +197,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.CompraEstoque, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.CompraEstoqueController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -208,7 +208,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
     "Method": "Create",
     "RelativePath": "api/CompraEstoque",
     "HttpMethod": "POST",
@@ -217,13 +217,13 @@
     "Parameters": [
       {
         "Name": "novaCompra",
-        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
     "Method": "GetById",
     "RelativePath": "api/CompraEstoque/{id}",
     "HttpMethod": "GET",
@@ -249,7 +249,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -260,7 +260,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
     "Method": "Update",
     "RelativePath": "api/CompraEstoque/{id}",
     "HttpMethod": "PUT",
@@ -274,14 +274,14 @@
       },
       {
         "Name": "atualizada",
-        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+        "Type": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CompraEstoqueController",
     "Method": "Delete",
     "RelativePath": "api/CompraEstoque/{id}",
     "HttpMethod": "DELETE",
@@ -297,7 +297,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDesconto",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDescontoController",
     "Method": "Listar",
     "RelativePath": "api/CupomDeDesconto",
     "HttpMethod": "GET",
@@ -307,7 +307,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDesconto",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDescontoController",
     "Method": "Criar",
     "RelativePath": "api/CupomDeDesconto",
     "HttpMethod": "POST",
@@ -316,14 +316,14 @@
     "Parameters": [
       {
         "Name": "novo",
-        "Type": "LojaDeBrinquedos2.Controllers.CupomDeDesconto",
+        "Type": "LojaDeBrinquedos2.Controllers.CupomDeDescontoController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDesconto",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDescontoController",
     "Method": "BuscarPorId",
     "RelativePath": "api/CupomDeDesconto/{id}",
     "HttpMethod": "GET",
@@ -339,7 +339,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDesconto",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDescontoController",
     "Method": "Atualizar",
     "RelativePath": "api/CupomDeDesconto/{id}",
     "HttpMethod": "PUT",
@@ -353,14 +353,14 @@
       },
       {
         "Name": "atualizado",
-        "Type": "LojaDeBrinquedos2.Controllers.CupomDeDesconto",
+        "Type": "LojaDeBrinquedos2.Controllers.CupomDeDescontoController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDesconto",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.CupomDeDescontoController",
     "Method": "Deletar",
     "RelativePath": "api/CupomDeDesconto/{id}",
     "HttpMethod": "DELETE",
@@ -376,7 +376,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Entrega",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EntregaController",
     "Method": "GetAll",
     "RelativePath": "api/Entrega",
     "HttpMethod": "GET",
@@ -386,7 +386,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Entrega",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EntregaController",
     "Method": "Create",
     "RelativePath": "api/Entrega",
     "HttpMethod": "POST",
@@ -395,14 +395,14 @@
     "Parameters": [
       {
         "Name": "novaEntrega",
-        "Type": "LojaDeBrinquedos2.Controllers.Entrega",
+        "Type": "LojaDeBrinquedos2.Controllers.EntregaController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Entrega",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EntregaController",
     "Method": "GetById",
     "RelativePath": "api/Entrega/{id}",
     "HttpMethod": "GET",
@@ -418,7 +418,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Entrega",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EntregaController",
     "Method": "UpdateStatus",
     "RelativePath": "api/Entrega/{id}",
     "HttpMethod": "PUT",
@@ -439,7 +439,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Entrega",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EntregaController",
     "Method": "Delete",
     "RelativePath": "api/Entrega/{id}",
     "HttpMethod": "DELETE",
@@ -455,7 +455,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Estoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EstoqueController",
     "Method": "Get",
     "RelativePath": "api/Estoque",
     "HttpMethod": "GET",
@@ -465,7 +465,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Estoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EstoqueController",
     "Method": "Post",
     "RelativePath": "api/Estoque",
     "HttpMethod": "POST",
@@ -474,14 +474,14 @@
     "Parameters": [
       {
         "Name": "estoque",
-        "Type": "LojaDeBrinquedos2.Controllers.Estoque",
+        "Type": "LojaDeBrinquedos2.Controllers.EstoqueController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Estoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EstoqueController",
     "Method": "Put",
     "RelativePath": "api/Estoque/{nomeProduto}",
     "HttpMethod": "PUT",
@@ -495,14 +495,14 @@
       },
       {
         "Name": "estoque",
-        "Type": "LojaDeBrinquedos2.Controllers.Estoque",
+        "Type": "LojaDeBrinquedos2.Controllers.EstoqueController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Estoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EstoqueController",
     "Method": "Delete",
     "RelativePath": "api/Estoque/{nomeProduto}",
     "HttpMethod": "DELETE",
@@ -518,7 +518,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Estoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.EstoqueController",
     "Method": "Get",
     "RelativePath": "api/Estoque/{Produto}",
     "HttpMethod": "GET",
@@ -539,7 +539,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.Fornecedor",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.FornecedorController",
     "Method": "ListarFornecedores",
     "RelativePath": "api/Fornecedor",
     "HttpMethod": "GET",
@@ -549,7 +549,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.Fornecedor",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.FornecedorController",
     "Method": "CriarFornecedor",
     "RelativePath": "api/Fornecedor",
     "HttpMethod": "POST",
@@ -558,14 +558,14 @@
     "Parameters": [
       {
         "Name": "novoFornecedor",
-        "Type": "LojaDeBrinquedos2.Controllers.Produtos.Fornecedor",
+        "Type": "LojaDeBrinquedos2.Controllers.Produtos.FornecedorController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.Fornecedor",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.FornecedorController",
     "Method": "ObterFornecedor",
     "RelativePath": "api/Fornecedor/{id}",
     "HttpMethod": "GET",
@@ -581,7 +581,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.Fornecedor",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.FornecedorController",
     "Method": "AtualizarFornecedor",
     "RelativePath": "api/Fornecedor/{id}",
     "HttpMethod": "PUT",
@@ -595,14 +595,14 @@
       },
       {
         "Name": "fornecedorAtualizado",
-        "Type": "LojaDeBrinquedos2.Controllers.Produtos.Fornecedor",
+        "Type": "LojaDeBrinquedos2.Controllers.Produtos.FornecedorController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.Fornecedor",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.Produtos.FornecedorController",
     "Method": "ExcluirFornecedor",
     "RelativePath": "api/Fornecedor/{id}",
     "HttpMethod": "DELETE",
@@ -618,7 +618,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Frete",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FreteController",
     "Method": "ObterTodos",
     "RelativePath": "api/Frete",
     "HttpMethod": "GET",
@@ -627,7 +627,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.Frete, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.FreteController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -638,7 +638,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Frete",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FreteController",
     "Method": "Criar",
     "RelativePath": "api/Frete",
     "HttpMethod": "POST",
@@ -647,13 +647,13 @@
     "Parameters": [
       {
         "Name": "novo",
-        "Type": "LojaDeBrinquedos2.Controllers.Frete",
+        "Type": "LojaDeBrinquedos2.Controllers.FreteController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Frete",
+        "Type": "LojaDeBrinquedos2.Controllers.FreteController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -664,7 +664,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Frete",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FreteController",
     "Method": "ObterPorId",
     "RelativePath": "api/Frete/{id}",
     "HttpMethod": "GET",
@@ -679,7 +679,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Frete",
+        "Type": "LojaDeBrinquedos2.Controllers.FreteController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -690,7 +690,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Frete",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FreteController",
     "Method": "Atualizar",
     "RelativePath": "api/Frete/{id}",
     "HttpMethod": "PUT",
@@ -704,14 +704,14 @@
       },
       {
         "Name": "atualizado",
-        "Type": "LojaDeBrinquedos2.Controllers.Frete",
+        "Type": "LojaDeBrinquedos2.Controllers.FreteController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Frete",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FreteController",
     "Method": "Deletar",
     "RelativePath": "api/Frete/{id}",
     "HttpMethod": "DELETE",
@@ -727,7 +727,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Funcionarios",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FuncionariosController",
     "Method": "ObterTodos",
     "RelativePath": "api/Funcionarios",
     "HttpMethod": "GET",
@@ -736,7 +736,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.Funcionarios, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.FuncionariosController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -747,7 +747,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Funcionarios",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FuncionariosController",
     "Method": "Criar",
     "RelativePath": "api/Funcionarios",
     "HttpMethod": "POST",
@@ -756,13 +756,13 @@
     "Parameters": [
       {
         "Name": "novo",
-        "Type": "LojaDeBrinquedos2.Controllers.Funcionarios",
+        "Type": "LojaDeBrinquedos2.Controllers.FuncionariosController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Funcionarios",
+        "Type": "LojaDeBrinquedos2.Controllers.FuncionariosController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -773,7 +773,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Funcionarios",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FuncionariosController",
     "Method": "ObterPorId",
     "RelativePath": "api/Funcionarios/{id}",
     "HttpMethod": "GET",
@@ -788,7 +788,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Funcionarios",
+        "Type": "LojaDeBrinquedos2.Controllers.FuncionariosController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -799,7 +799,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Funcionarios",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FuncionariosController",
     "Method": "Atualizar",
     "RelativePath": "api/Funcionarios/{id}",
     "HttpMethod": "PUT",
@@ -813,14 +813,14 @@
       },
       {
         "Name": "atualizado",
-        "Type": "LojaDeBrinquedos2.Controllers.Funcionarios",
+        "Type": "LojaDeBrinquedos2.Controllers.FuncionariosController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Funcionarios",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.FuncionariosController",
     "Method": "Deletar",
     "RelativePath": "api/Funcionarios/{id}",
     "HttpMethod": "DELETE",
@@ -836,7 +836,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensComprados",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
     "Method": "GetAll",
     "RelativePath": "api/ItensComprados",
     "HttpMethod": "GET",
@@ -845,7 +845,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.ItensComprados, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.ItensCompradosController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -856,7 +856,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensComprados",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
     "Method": "Create",
     "RelativePath": "api/ItensComprados",
     "HttpMethod": "POST",
@@ -865,13 +865,13 @@
     "Parameters": [
       {
         "Name": "novoItem",
-        "Type": "LojaDeBrinquedos2.Controllers.ItensComprados",
+        "Type": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.ItensComprados",
+        "Type": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -882,7 +882,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensComprados",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
     "Method": "GetById",
     "RelativePath": "api/ItensComprados/{id}",
     "HttpMethod": "GET",
@@ -897,7 +897,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.ItensComprados",
+        "Type": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -908,7 +908,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensComprados",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
     "Method": "Update",
     "RelativePath": "api/ItensComprados/{id}",
     "HttpMethod": "PUT",
@@ -922,14 +922,14 @@
       },
       {
         "Name": "itemAtualizado",
-        "Type": "LojaDeBrinquedos2.Controllers.ItensComprados",
+        "Type": "LojaDeBrinquedos2.Controllers.ItensCompradosController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Loja",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.LojaController",
     "Method": "ObterTodas",
     "RelativePath": "api/Loja",
     "HttpMethod": "GET",
@@ -938,7 +938,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.Loja, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.LojaController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -949,7 +949,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Loja",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.LojaController",
     "Method": "Criar",
     "RelativePath": "api/Loja",
     "HttpMethod": "POST",
@@ -958,13 +958,13 @@
     "Parameters": [
       {
         "Name": "nova",
-        "Type": "LojaDeBrinquedos2.Controllers.Loja",
+        "Type": "LojaDeBrinquedos2.Controllers.LojaController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Loja",
+        "Type": "LojaDeBrinquedos2.Controllers.LojaController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -975,7 +975,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Loja",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.LojaController",
     "Method": "ObterPorId",
     "RelativePath": "api/Loja/{id}",
     "HttpMethod": "GET",
@@ -990,7 +990,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Loja",
+        "Type": "LojaDeBrinquedos2.Controllers.LojaController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1001,7 +1001,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Loja",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.LojaController",
     "Method": "Atualizar",
     "RelativePath": "api/Loja/{id}",
     "HttpMethod": "PUT",
@@ -1015,14 +1015,14 @@
       },
       {
         "Name": "atualizada",
-        "Type": "LojaDeBrinquedos2.Controllers.Loja",
+        "Type": "LojaDeBrinquedos2.Controllers.LojaController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Loja",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.LojaController",
     "Method": "Deletar",
     "RelativePath": "api/Loja/{id}",
     "HttpMethod": "DELETE",
@@ -1038,7 +1038,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.NewsLetter",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.NewsLetterController",
     "Method": "GetTodos",
     "RelativePath": "api/NewsLetter",
     "HttpMethod": "GET",
@@ -1048,7 +1048,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.NewsLetter",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.NewsLetterController",
     "Method": "Cadastrar",
     "RelativePath": "api/NewsLetter",
     "HttpMethod": "POST",
@@ -1057,14 +1057,14 @@
     "Parameters": [
       {
         "Name": "novo",
-        "Type": "LojaDeBrinquedos2.Controllers.NewsLetter",
+        "Type": "LojaDeBrinquedos2.Controllers.NewsLetterController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.NewsLetter",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.NewsLetterController",
     "Method": "Remover",
     "RelativePath": "api/NewsLetter/{id}",
     "HttpMethod": "DELETE",
@@ -1080,7 +1080,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pagamento",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PagamentoController",
     "Method": "ObterTodos",
     "RelativePath": "api/Pagamento",
     "HttpMethod": "GET",
@@ -1089,7 +1089,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.Pagamento, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.PagamentoController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1100,7 +1100,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pagamento",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PagamentoController",
     "Method": "Criar",
     "RelativePath": "api/Pagamento",
     "HttpMethod": "POST",
@@ -1109,13 +1109,13 @@
     "Parameters": [
       {
         "Name": "novoPagamento",
-        "Type": "LojaDeBrinquedos2.Controllers.Pagamento\u002BPagamentoCreateDto",
+        "Type": "LojaDeBrinquedos2.Controllers.PagamentoController\u002BPagamentoCreateDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Pagamento",
+        "Type": "LojaDeBrinquedos2.Controllers.PagamentoController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1126,7 +1126,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pagamento",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PagamentoController",
     "Method": "ObterPorId",
     "RelativePath": "api/Pagamento/{id}",
     "HttpMethod": "GET",
@@ -1141,7 +1141,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Pagamento",
+        "Type": "LojaDeBrinquedos2.Controllers.PagamentoController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1152,7 +1152,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pagamento",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PagamentoController",
     "Method": "AtualizarStatus",
     "RelativePath": "api/Pagamento/{id}",
     "HttpMethod": "PUT",
@@ -1173,7 +1173,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pagamento",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PagamentoController",
     "Method": "Deletar",
     "RelativePath": "api/Pagamento/{id}",
     "HttpMethod": "DELETE",
@@ -1189,7 +1189,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pedido",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PedidoController",
     "Method": "ObterTodos",
     "RelativePath": "api/Pedido",
     "HttpMethod": "GET",
@@ -1198,7 +1198,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.Pedido, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.PedidoController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1209,7 +1209,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pedido",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PedidoController",
     "Method": "Criar",
     "RelativePath": "api/Pedido",
     "HttpMethod": "POST",
@@ -1218,13 +1218,13 @@
     "Parameters": [
       {
         "Name": "novoDto",
-        "Type": "LojaDeBrinquedos2.Controllers.Pedido\u002BPedidoCreateDto",
+        "Type": "LojaDeBrinquedos2.Controllers.PedidoController\u002BPedidoCreateDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Pedido",
+        "Type": "LojaDeBrinquedos2.Controllers.PedidoController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1235,7 +1235,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pedido",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PedidoController",
     "Method": "ObterPorId",
     "RelativePath": "api/Pedido/{id}",
     "HttpMethod": "GET",
@@ -1250,7 +1250,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Pedido",
+        "Type": "LojaDeBrinquedos2.Controllers.PedidoController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1261,7 +1261,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pedido",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PedidoController",
     "Method": "AtualizarStatus",
     "RelativePath": "api/Pedido/{id}",
     "HttpMethod": "PUT",
@@ -1282,7 +1282,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Pedido",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.PedidoController",
     "Method": "Deletar",
     "RelativePath": "api/Pedido/{id}",
     "HttpMethod": "DELETE",
@@ -1299,25 +1299,15 @@
   },
   {
     "ContainingType": "LojaDeBrinquedos2.Controllers.ProdutosController",
-    "Method": "Get",
-    "RelativePath": "api/Produtos",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProdutosController",
-    "Method": "Post",
-    "RelativePath": "api/Produtos",
+    "Method": "Adicionar",
+    "RelativePath": "api/Produtos/adicionar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "produto",
-        "Type": "Produto",
+        "Type": "LojaDeBrinquedos2.Controllers.Produto",
         "IsRequired": true
       }
     ],
@@ -1325,45 +1315,8 @@
   },
   {
     "ContainingType": "LojaDeBrinquedos2.Controllers.ProdutosController",
-    "Method": "Get",
-    "RelativePath": "api/Produtos/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProdutosController",
-    "Method": "Put",
-    "RelativePath": "api/Produtos/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "produto",
-        "Type": "Produto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProdutosController",
-    "Method": "Delete",
-    "RelativePath": "api/Produtos/{id}",
+    "Method": "Deletar",
+    "RelativePath": "api/Produtos/deletar/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1377,7 +1330,38 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidade",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProdutosController",
+    "Method": "Editar",
+    "RelativePath": "api/Produtos/editar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "produto",
+        "Type": "LojaDeBrinquedos2.Controllers.Produto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProdutosController",
+    "Method": "Listar",
+    "RelativePath": "api/Produtos/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidadeController",
     "Method": "ListarTodos",
     "RelativePath": "api/ProgramaFidelidade",
     "HttpMethod": "GET",
@@ -1387,7 +1371,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidade",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidadeController",
     "Method": "BuscarPorCliente",
     "RelativePath": "api/ProgramaFidelidade/{clienteId}",
     "HttpMethod": "GET",
@@ -1403,7 +1387,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidade",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidadeController",
     "Method": "ListarClientesComPontosMinimos",
     "RelativePath": "api/ProgramaFidelidade/acima-de/{pontosMinimos}",
     "HttpMethod": "GET",
@@ -1419,7 +1403,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidade",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidadeController",
     "Method": "AdicionarPontos",
     "RelativePath": "api/ProgramaFidelidade/adicionar-pontos",
     "HttpMethod": "POST",
@@ -1440,7 +1424,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidade",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidadeController",
     "Method": "RemoverPontos",
     "RelativePath": "api/ProgramaFidelidade/remover-pontos",
     "HttpMethod": "POST",
@@ -1461,7 +1445,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidade",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.ProgramaFidelidadeController",
     "Method": "TrocarPontos",
     "RelativePath": "api/ProgramaFidelidade/trocar-pontos",
     "HttpMethod": "POST",
@@ -1482,7 +1466,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.RelatorioDeEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.RelatorioDeEstoqueController",
     "Method": "EstoqueAtual",
     "RelativePath": "api/RelatorioDeEstoque",
     "HttpMethod": "GET",
@@ -1492,7 +1476,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.RelatorioDeEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.RelatorioDeEstoqueController",
     "Method": "EstoqueBaixo",
     "RelativePath": "api/RelatorioDeEstoque/baixo",
     "HttpMethod": "GET",
@@ -1508,7 +1492,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.RelatorioDeEstoque",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.RelatorioDeEstoqueController",
     "Method": "EstoqueZerado",
     "RelativePath": "api/RelatorioDeEstoque/zerado",
     "HttpMethod": "GET",
@@ -1518,7 +1502,27 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Transportadora",
+    "ContainingType": "LojaDeBrinquedos2.Db_Context.TesteController",
+    "Method": "GetCategorias",
+    "RelativePath": "api/Teste/categorias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaDeBrinquedos2.Db_Context.TesteController",
+    "Method": "VerificarConexao",
+    "RelativePath": "api/Teste/conexao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaDeBrinquedos2.Controllers.TransportadoraController",
     "Method": "ObterTodas",
     "RelativePath": "api/Transportadora",
     "HttpMethod": "GET",
@@ -1527,7 +1531,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.Transportadora, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaDeBrinquedos2.Controllers.TransportadoraController, LojaDeBrinquedos2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1538,7 +1542,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Transportadora",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.TransportadoraController",
     "Method": "Criar",
     "RelativePath": "api/Transportadora",
     "HttpMethod": "POST",
@@ -1547,13 +1551,13 @@
     "Parameters": [
       {
         "Name": "nova",
-        "Type": "LojaDeBrinquedos2.Controllers.Transportadora",
+        "Type": "LojaDeBrinquedos2.Controllers.TransportadoraController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Transportadora",
+        "Type": "LojaDeBrinquedos2.Controllers.TransportadoraController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1564,7 +1568,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Transportadora",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.TransportadoraController",
     "Method": "ObterPorId",
     "RelativePath": "api/Transportadora/{id}",
     "HttpMethod": "GET",
@@ -1579,7 +1583,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LojaDeBrinquedos2.Controllers.Transportadora",
+        "Type": "LojaDeBrinquedos2.Controllers.TransportadoraController",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1590,7 +1594,7 @@
     ]
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Transportadora",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.TransportadoraController",
     "Method": "Atualizar",
     "RelativePath": "api/Transportadora/{id}",
     "HttpMethod": "PUT",
@@ -1604,14 +1608,14 @@
       },
       {
         "Name": "atualizada",
-        "Type": "LojaDeBrinquedos2.Controllers.Transportadora",
+        "Type": "LojaDeBrinquedos2.Controllers.TransportadoraController",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "LojaDeBrinquedos2.Controllers.Transportadora",
+    "ContainingType": "LojaDeBrinquedos2.Controllers.TransportadoraController",
     "Method": "Deletar",
     "RelativePath": "api/Transportadora/{id}",
     "HttpMethod": "DELETE",

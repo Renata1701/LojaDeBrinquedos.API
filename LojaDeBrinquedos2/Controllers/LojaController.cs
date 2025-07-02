@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class Loja : ControllerBase
+public class LojaController : ControllerBase
 {
-    public static List<Loja> _lojas = new()
+    public static List<LojaController> _lojas = new()
     {
-        new Loja
+        new LojaController
         {
             Id = 1,
             Nome = "Loja Brinquedos Felizes",
@@ -28,13 +28,13 @@ public class Loja : ControllerBase
 
 
     [HttpGet]
-    public ActionResult<IEnumerable<Loja>> ObterTodas()
+    public ActionResult<IEnumerable<LojaController>> ObterTodas()
     {
         return Ok(_lojas);
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Loja> ObterPorId(int id)
+    public ActionResult<LojaController> ObterPorId(int id)
     {
         var loja = _lojas.FirstOrDefault(l => l.Id == id);
         if (loja == null)
@@ -44,7 +44,7 @@ public class Loja : ControllerBase
     }
 
     [HttpPost]
-    public ActionResult<Loja> Criar([FromBody] Loja nova)
+    public ActionResult<LojaController> Criar([FromBody] LojaController nova)
     {
         nova.Id = _lojas.Any() ? _lojas.Max(l => l.Id) + 1 : 1;
         _lojas.Add(nova);
@@ -52,7 +52,7 @@ public class Loja : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult Atualizar(int id, [FromBody] Loja atualizada)
+    public IActionResult Atualizar(int id, [FromBody] LojaController atualizada)
     {
         var loja = _lojas.FirstOrDefault(l => l.Id == id);
         if (loja == null)

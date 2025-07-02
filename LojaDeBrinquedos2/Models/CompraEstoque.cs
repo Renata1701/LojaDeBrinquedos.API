@@ -13,11 +13,6 @@ public class CompraEstoque
         this.DataCompra = DataCompra;
         this.NotaFiscal = NotaFiscal;
         this.ValorTotal = ValorTotal;
-
     }
-
-        
-
-
 }
 
