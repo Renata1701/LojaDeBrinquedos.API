@@ -2474,18 +2474,6 @@
         }
       }
     },
-    "/api/Teste/categorias": {
-      "get": {
-        "tags": [
-          "Teste"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Transportadora": {
       "get": {
         "tags": [

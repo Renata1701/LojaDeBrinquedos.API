@@ -7,85 +7,31 @@ namespace LojaDeBrinquedos2.Db_Context
     [ApiController]
     public class TesteController : ControllerBase
     {
-        private readonly Database _db;
+        private string _connectionString;
 
-        public TesteController(Database db)
+        public TesteController()
         {
-            _db = db;
+            _connectionString = "Server=localhost;Port=3306;Database=seu_banco;User ID=root;Password=;SslMode=none;";
+
         }
 
-       
         [HttpGet("conexao")]
-        public IActionResult VerificarConexao()
+        public IActionResult Teste()
         {
-            if (_db.TestarConexao())
-                return Ok("Conexão com o banco de dados feita com sucesso!");
-            else
-                return StatusCode(500, "Erro ao conectar com o banco de dados.");
-        }
+            string connectionString = "Server=localhost;Port=3306;Database=lojadebrinquedos;Uid=root;Pwd= ;";
 
-        
-        [HttpGet("categorias")]
-        public IActionResult GetCategorias()
-        {
-            var lista = _db.ListarCategorias();
-            return Ok(lista);
-        }
-    }
-
-    public class Categoria
-    {
-        public int Id { get; set; }
-        public string? Nome { get; set; }
-        public string? Descricao { get; set; }
-    }
-
-    public class Database
-    {
-        private readonly string connectionString;
-
-        public Database(string servidor, string banco, string usuario, string senha)
-        {
-            connectionString = $"Server={servidor};Database={banco};User ID={usuario};Password={senha};";
-        }
-
-        public bool TestarConexao()
-        {
-            try
+            using (var connection = new MySqlConnection(connectionString))
             {
-                using var conn = new MySqlConnection(connectionString);
-                conn.Open();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public List<Categoria> ListarCategorias()
-        {
-            var categorias = new List<Categoria>();
-
-            using var conn = new MySqlConnection(connectionString);
-            conn.Open();
-
-            string sql = "SELECT id, nome, descricao FROM categorias";
-            using var cmd = new MySqlCommand(sql, conn);
-            using var reader = cmd.ExecuteReader();
-
-            while (reader.Read())
-            {
-                categorias.Add(new Categoria
+                try
                 {
-                    Id = reader.GetInt32("id"),
-                    Nome = reader.GetString("nome"),
-                    Descricao = reader.GetString("descricao")
-                });
+                    connection.Open();
+                    return Ok("Conexão aberta com sucesso!");
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest("Erro ao conectar: " + ex.Message);
+                }
             }
-
-            return categorias;
         }
     }
 }
-

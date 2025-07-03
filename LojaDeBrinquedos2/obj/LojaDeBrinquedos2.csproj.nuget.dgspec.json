@@ -50,6 +50,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "EventFlow.MsSql": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "EventFlow.Sql": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[9.3.0, )"

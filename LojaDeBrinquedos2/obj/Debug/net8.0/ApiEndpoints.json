@@ -1503,17 +1503,7 @@
   },
   {
     "ContainingType": "LojaDeBrinquedos2.Db_Context.TesteController",
-    "Method": "GetCategorias",
-    "RelativePath": "api/Teste/categorias",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LojaDeBrinquedos2.Db_Context.TesteController",
-    "Method": "VerificarConexao",
+    "Method": "Teste",
     "RelativePath": "api/Teste/conexao",
     "HttpMethod": "GET",
     "IsController": true,

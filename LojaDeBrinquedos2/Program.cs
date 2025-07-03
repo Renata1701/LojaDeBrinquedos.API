@@ -4,8 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 
-builder.Services.AddSingleton(new Database("localhost", "meu_banco", "root", "Natalli17**"));
-
+IServiceCollection serviceCollection = builder.Services.AddSingleton(implementationInstance: new DataBase("localhost", "meu_banco", "root", "Natalli17**"));
+builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -26,40 +26,77 @@ app.MapControllers();
 
 app.Run();
 
-
-public class Database
+class DataBase
 {
-    private readonly string connectionString;
+    private string _connectionString;
+    private string v;
 
-    public Database(string servidor, string banco, string usuario, string senha)
+    public DataBase(string server, string database, string user, string password)
     {
-        connectionString = $"Server={servidor};Database={banco};User ID={usuario};Password={senha};";
+        _connectionString = $"Server={server};Database={database};User ID={user};Password={password};";
     }
 
-    public void TestConnection()
+    public DataBase(string server, string database, string user, string password, string v) : this(server, database, user, password)
     {
-        using var conn = new MySqlConnection(connectionString);
-        conn.Open();
-        Console.WriteLine("Conex�o com o banco realizada com sucesso.");
-        conn.Close();
+        this.v = v;
+    }
+
+    public DataBase(string connectionString)
+    {
+        _connectionString = connectionString;
     }
 
     public bool TestarConexao()
     {
         try
         {
-            using var conn = new MySqlConnection(connectionString);
-            conn.Open();
-            return true;
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                connection.Open();
+                return true;
+            }
         }
         catch
         {
             return false;
         }
     }
-
-    internal object ListarCategorias()
+    public void TestConnection()
     {
-        throw new NotImplementedException();
+        if (TestarConexao())
+        {
+            Console.WriteLine("Conexão bem-sucedida!");
+        }
+        else
+        {
+            Console.WriteLine("Falha na conexão.");
+        }
+    }
+    public List<string> ListarCategorias()
+    {
+        var categorias = new List<string>();
+        using (var connection = new MySqlConnection(_connectionString))
+        {
+            connection.Open();
+            var command = new MySqlCommand("SELECT nome FROM categorias", connection);
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    categorias.Add(reader.GetString(0));
+                }
+            }
+        }
+        return categorias;
+    }
+    public bool InserirCategoria(string nome)
+    {
+        using (var connection = new MySqlConnection(_connectionString))
+        {
+            connection.Open();
+            var command = new MySqlCommand("INSERT INTO categorias (nome) VALUES (@nome)", connection);
+            command.Parameters.AddWithValue("@nome", nome);
+            return command.ExecuteNonQuery() > 0;
+        }
     }
 }
