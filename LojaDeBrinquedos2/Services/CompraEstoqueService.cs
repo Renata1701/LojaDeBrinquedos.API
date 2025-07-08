@@ -5,12 +5,6 @@ public class CompraEstoqueService
 
     private readonly List<CompraEstoqueService> _compras = new();
 
-    public int Id { get; private set; }
-    public required object FornecedorId { get; set; }
-    public required object DataCompra { get; set; }
-    public required object NotaFiscal { get;  set; }
-    public required object ValorTotal { get; set; }
-
     public IEnumerable<CompraEstoqueService> GetAll() => _compras;
 
     public CompraEstoqueService GetById(int id)

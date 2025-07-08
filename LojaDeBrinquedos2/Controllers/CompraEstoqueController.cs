@@ -8,12 +8,7 @@ namespace LojaDeBrinquedos2.Controllers;
 public class CompraEstoqueController : ControllerBase
 {
     private static readonly List<CompraEstoqueController> _comprasEstoque = new();
-    public int Id { get; set; }
-    public required string FornecedorId { get; set; }
-    public required object DataCompra { get; set; }
-    public required object NotaFiscal { get; set; }
-    public required object ValorTotal { get; set; }
-
+  
     [HttpGet]
     public ActionResult<IEnumerable<CompraEstoqueController>> GetAll()
     {

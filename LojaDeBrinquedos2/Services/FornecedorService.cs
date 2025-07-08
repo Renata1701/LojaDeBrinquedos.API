@@ -5,13 +5,6 @@ public class FornecedorService
     private readonly List<FornecedorService> _fornecedores = new();
     private object? Endereco;
 
-    public required object Nome { get; set; }
-    public required object CNPJ { get; set; }
-    public required object Contato { get; set; }
-    public required object Email { get;  set; }
-    public required object Telefone { get;  set; }
-    public int Id { get;  set; }
-
     public IEnumerable<FornecedorService> GetAll() => _fornecedores;
 
     public FornecedorService GetById(int id)

@@ -18,13 +18,6 @@ public class FreteController : ControllerBase
         }
     };
 
-    public required object IdEntrega { get; set; }
-    public required object Valor { get; set; }
-    public required object PrazoEstimado { get; set; }
-    public required object TipoEnvio { get; set; }
-    public int Id { get; set; }
-
-
     [HttpGet]
     public ActionResult<IEnumerable<FreteController>> ObterTodos()
     {

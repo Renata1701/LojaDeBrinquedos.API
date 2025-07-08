@@ -11,12 +11,6 @@ public class FornecedorController : ControllerBase
             new FornecedorController { Id = 1, Nome = "Fornecedor A", Cnpj = "12345678000100", Telefone = "(31) 99999-9999", Email = "contato@fornecedora.com" }
         };
 
-    public int Id { get; set; }
-    public required string Nome { get; set; }
-    public string? Cnpj { get; private set; }
-    public string? Telefone { get; private set; }
-    public string? Email { get; private set; }
-
     [HttpGet]
     public IActionResult ListarFornecedores()
     {

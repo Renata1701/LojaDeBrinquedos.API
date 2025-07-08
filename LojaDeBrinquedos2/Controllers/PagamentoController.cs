@@ -19,14 +19,6 @@ public class PagamentoController : ControllerBase
         }
     };
 
-    public int Id { get; set; }
-    public int IdPedido { get; set; }
-    public required string TipoPagamento { get; set; }
-    public required string Status { get; set; }
-    public DateTime DataPagamento { get; set; }
-    public decimal Valor { get; set; }
-
-
     [HttpGet]
     public ActionResult<IEnumerable<PagamentoController>> ObterTodos()
     {

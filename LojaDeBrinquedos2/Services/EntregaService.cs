@@ -2,17 +2,6 @@
 
 public class EntregaService
 {
-
-    private readonly List<EntregaService> _entregas = new();
-    private int Id;
-    public required object PedidoId { get; set; }
-    public required object TransportadoraId { get;  set; }
-    public required object Status { get; set; }
-    public required object CodigoRastreio { get;  set; }
-    public required object DataEnvio { get;  set; }
-    public required object DataEntregaPrevista { get;  set; }
-    public required object DataEntregaReal { get;  set; }
-
     public IEnumerable<EntregaService> GetAll() => _entregas;
 
     public EntregaService GetById(int id)

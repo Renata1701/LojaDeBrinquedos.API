@@ -5,11 +5,6 @@ public class ItensCompradosService
 
     private readonly List<ItensCompradosService> _itens = new();
 
-    public required object ProdutoId { get;  set; }
-    public required object Quantidade { get;  set; }
-    public required object PrecoUnitario { get;  set; }
-    public int Id { get; private set; }
-
     public IEnumerable<ItensCompradosService> GetAll() => _itens;
 
     public ItensCompradosService GetById(int id)

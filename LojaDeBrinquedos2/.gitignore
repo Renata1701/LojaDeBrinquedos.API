@@ -1,0 +1,14 @@
+bin/ 
+obj/ 
+dist/ 
+out/ 
+node_modules/ 
+vendor/ 
+.vscode/ 
+.idea/ 
+logs/ 
+tmp/ 
+.cache/ 
+*.log 
+.DS_Store 
+Thumbs.db 

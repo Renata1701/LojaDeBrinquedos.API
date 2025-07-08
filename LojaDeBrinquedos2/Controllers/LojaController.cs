@@ -19,14 +19,6 @@ public class LojaController : ControllerBase
         }
     };
 
-    public int Id { get; set; }
-    public required string Nome { get; set; }
-    public required string CNPJ { get; set; }
-    public required string Endereco { get; set; }
-    public required string Telefone { get; set; }
-    public required string Responsavel { get; set; }
-
-
     [HttpGet]
     public ActionResult<IEnumerable<LojaController>> ObterTodas()
     {

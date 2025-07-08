@@ -18,14 +18,6 @@ public class TransportadoraController : ControllerBase
             Email = "contato@transbrinquedos.com"
         }
     };
-
-    public int Id { get; set; }
-    public required string Nome { get; set; }
-    public required object CNPJ { get; set; }
-    public required object Contato { get; set; }
-    public required object Telefone { get; set; }
-    public required object Email { get; set; }
-
     [HttpGet]
     public ActionResult<IEnumerable<TransportadoraController>> ObterTodas()
     {

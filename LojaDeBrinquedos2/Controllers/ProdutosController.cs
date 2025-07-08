@@ -103,18 +103,3 @@ public class ProdutosController : ControllerBase
             return NotFound("Produto não encontrado.");
     }
 }
-
-public class Produto
-{
-    public int Id { get; set; }
-    public string? Nome { get; set; }
-    public string? Descricao { get; set; }
-    public decimal Preco { get; set; }
-    public int CategoriaId { get; set; }
-    public int FornecedorId { get; set; }
-    public int Estoque { get; set; }
-}
-
-
-
-

@@ -6,12 +6,6 @@ public class PagamentoService
     private readonly List<PagamentoService> _pagamentos = new();
     private int Id;
 
-    public required object PedidoId { get;  set; }
-    public required object TipoPagamento { get;  set; }
-    public required object Status { get;  set; }
-    public required object DataPagamento { get; set; }
-    public required object Valor { get;  set; }
-
     public IEnumerable<PagamentoService> GetAll() => _pagamentos;
 
     public PagamentoService GetById(int id)

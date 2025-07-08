@@ -28,13 +28,6 @@ public class PedidoController : ControllerBase
         }
     };
 
-    public int Id { get; private set; }
-    public int IdCliente { get; set; }
-    public DateTime DataPedido { get; set; }
-    public required string Status { get; set; }
-    public required string FormaPagamento { get; set; }
-    public decimal ValorTotal { get; set; }
-
     [HttpGet]
     public ActionResult<IEnumerable<PedidoController>> ObterTodos()
     {

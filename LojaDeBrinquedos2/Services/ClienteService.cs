@@ -4,14 +4,6 @@ public class ClienteService
 {
     private readonly List<ClienteService> _clientes = new();
 
-    public int Id { get;  set; }
-    public required object Nome { get;  set; }
-    public required object CPF { get; set; }
-    public required object Email { get; set; }
-    public required object Telefone { get;  set; }
-    public required object Endereco { get;set; }
-    public required object DataCadastro { get; set; }
-
     public IEnumerable<ClienteService> GetAll() => _clientes;
 
     public ClienteService GetById(int id)
