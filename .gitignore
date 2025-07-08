@@ -5,3 +5,12 @@ obj/
 *.suo 
 *.db 
 *.vsidx 
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.exe
+*.dll
+*.log
+*.tmp
