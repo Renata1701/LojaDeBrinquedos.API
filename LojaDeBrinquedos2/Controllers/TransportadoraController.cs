@@ -22,9 +22,9 @@ public class TransportadoraController : ControllerBase
     public int Id { get; set; }
     public required string Nome { get; set; }
     public required object CNPJ { get; set; }
-    public required object Contato { get;  set; }
+    public required object Contato { get; set; }
     public required object Telefone { get; set; }
-    public required object Email { get;  set; }
+    public required object Email { get; set; }
 
     [HttpGet]
     public ActionResult<IEnumerable<TransportadoraController>> ObterTodas()
@@ -42,7 +42,7 @@ public class TransportadoraController : ControllerBase
         return Ok(transportadora);
     }
 
-  
+
     [HttpPost]
     public ActionResult<TransportadoraController> Criar([FromBody] TransportadoraController nova)
     {
@@ -68,7 +68,7 @@ public class TransportadoraController : ControllerBase
         return NoContent();
     }
 
- 
+
     [HttpDelete("{id}")]
     public IActionResult Deletar(int id)
     {

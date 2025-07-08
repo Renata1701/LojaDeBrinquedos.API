@@ -7,8 +7,8 @@ namespace LojaDeBrinquedos2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class RelatorioDeEstoqueController : ControllerBase
-{ 
-      public int ProdutoId { get; set; }
+{
+    public int ProdutoId { get; set; }
     public string NomeProduto { get; set; }
     public int Quantidade { get; set; }
 
@@ -33,7 +33,7 @@ public class RelatorioDeEstoqueController : ControllerBase
         return Ok(_estoques);
     }
 
-  
+
     [HttpGet("baixo")]
     public IActionResult EstoqueBaixo([FromQuery] int limite = 5)
     {
@@ -50,7 +50,7 @@ public class RelatorioDeEstoqueController : ControllerBase
 }
 
 
-   
+
 
 
 

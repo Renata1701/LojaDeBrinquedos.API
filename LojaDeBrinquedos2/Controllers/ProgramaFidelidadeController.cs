@@ -32,7 +32,7 @@ public class ProgramaFidelidadeController : ControllerBase
         return Ok(clientesFidelidade);
     }
 
-    
+
     [HttpGet("{clienteId}")]
     public IActionResult BuscarPorCliente(int clienteId)
     {
@@ -43,7 +43,7 @@ public class ProgramaFidelidadeController : ControllerBase
         return Ok(cliente);
     }
 
-    
+
     [HttpPost("adicionar-pontos")]
     public IActionResult AdicionarPontos([FromQuery] int clienteId, [FromQuery] int pontos)
     {
@@ -58,7 +58,7 @@ public class ProgramaFidelidadeController : ControllerBase
         return Ok(cliente);
     }
 
-    
+
     [HttpPost("remover-pontos")]
     public IActionResult RemoverPontos([FromQuery] int clienteId, [FromQuery] int pontos)
     {
@@ -76,7 +76,7 @@ public class ProgramaFidelidadeController : ControllerBase
         return Ok(cliente);
     }
 
-    
+
     [HttpGet("acima-de/{pontosMinimos}")]
     public IActionResult ListarClientesComPontosMinimos(int pontosMinimos)
     {
@@ -84,7 +84,7 @@ public class ProgramaFidelidadeController : ControllerBase
         return Ok(clientes);
     }
 
-   
+
     [HttpPost("trocar-pontos")]
     public IActionResult TrocarPontos([FromQuery] int clienteId, [FromQuery] int pontos)
     {
@@ -100,7 +100,7 @@ public class ProgramaFidelidadeController : ControllerBase
 
         cliente.Pontos -= pontos;
 
-     
+
         string recompensa = "Desconto de 10% na próxima compra";
 
         return Ok(new
@@ -110,11 +110,3 @@ public class ProgramaFidelidadeController : ControllerBase
         });
     }
 }
-
-
-
-
-
-
-
-

@@ -21,10 +21,10 @@ public class FreteController : ControllerBase
     public required object IdEntrega { get; set; }
     public required object Valor { get; set; }
     public required object PrazoEstimado { get; set; }
-    public required object TipoEnvio { get;set; }
-    public int Id { get;set; }
+    public required object TipoEnvio { get; set; }
+    public int Id { get; set; }
 
-  
+
     [HttpGet]
     public ActionResult<IEnumerable<FreteController>> ObterTodos()
     {
@@ -42,7 +42,7 @@ public class FreteController : ControllerBase
         return Ok(frete);
     }
 
-   
+
     [HttpPost]
     public ActionResult<FreteController> Criar([FromBody] FreteController novo)
     {
@@ -52,7 +52,7 @@ public class FreteController : ControllerBase
         return CreatedAtAction(nameof(ObterPorId), new { id = novo.Id }, novo);
     }
 
- 
+
     [HttpPut("{id}")]
     public IActionResult Atualizar(int id, [FromBody] FreteController atualizado)
     {

@@ -46,7 +46,7 @@ public class FornecedorController : ControllerBase
     }
 
 
-    
+
     [HttpPut("{id}")]
     public IActionResult AtualizarFornecedor(int id, [FromBody] FornecedorController fornecedorAtualizado)
     {
@@ -62,7 +62,7 @@ public class FornecedorController : ControllerBase
         return NoContent();
     }
 
-    
+
     [HttpDelete("{id}")]
     public IActionResult ExcluirFornecedor(int id)
     {

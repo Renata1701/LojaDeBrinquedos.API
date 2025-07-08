@@ -22,21 +22,21 @@ public class FuncionariosController : ControllerBase
 
     public int Id { get; set; }
     public required string Nome { get; set; }
-    public required string CPF { get;  set; }
+    public required string CPF { get; set; }
     public required string Cargo { get; set; }
     public decimal Salario { get; set; }
-    public required string Email { get;  set; }
-    public required string Telefone { get;  set; }
+    public required string Email { get; set; }
+    public required string Telefone { get; set; }
     public DateTime DataAdmissao { get; set; }
 
-  
+
     [HttpGet]
     public ActionResult<IEnumerable<FuncionariosController>> ObterTodos()
     {
         return Ok(_funcionarios);
     }
 
-   
+
     [HttpGet("{id}")]
     public ActionResult<FuncionariosController> ObterPorId(int id)
     {

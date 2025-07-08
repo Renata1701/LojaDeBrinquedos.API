@@ -7,8 +7,8 @@ namespace LojaDeBrinquedos2.Controllers;
 [ApiController]
 public class CategoriaController : ControllerBase
 {
-    
-        private readonly string connectionString = "Server=localhost;Database=meu_banco;User ID=root;Password=Natalli17**;";
+
+    private readonly string connectionString = "Server=localhost;Database=meu_banco;User ID=root;Password=Natalli17**;";
 
     [HttpGet]
     public IActionResult GetCategorias()

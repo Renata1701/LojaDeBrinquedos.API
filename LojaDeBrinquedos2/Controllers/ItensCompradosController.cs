@@ -8,19 +8,19 @@ public class ItensCompradosController : ControllerBase
 {
     private static readonly List<ItensCompradosController> _itensComprados = new();
 
-    public int Id { get;  set; }
+    public int Id { get; set; }
     public required string PedidoId { get; set; }
     public required object ProdutoId { get; set; }
     public required object Quantidade { get; set; }
     public required object PrecoUnitario { get; set; }
 
-    
+
     [HttpGet]
     public ActionResult<IEnumerable<ItensCompradosController>> GetAll()
     {
         return Ok(_itensComprados);
     }
-    
+
     [HttpGet("{id}")]
     public ActionResult<ItensCompradosController> GetById(int id)
     {
@@ -29,7 +29,7 @@ public class ItensCompradosController : ControllerBase
 
         return Ok(item);
     }
-    
+
     [HttpPost]
     public ActionResult<ItensCompradosController> Create(ItensCompradosController novoItem)
     {

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaDeBrinquedos2.Controllers;
@@ -33,7 +34,7 @@ public class NewsLetterController : ControllerBase
 
         return CreatedAtAction(nameof(GetTodos), new { id = novo.Id }, novo);
     }
-    
+
 
     [HttpDelete("{id}")]
     public IActionResult Remover(int id)

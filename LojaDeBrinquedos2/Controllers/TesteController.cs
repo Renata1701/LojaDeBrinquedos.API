@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 
-namespace LojaDeBrinquedos2.Db_Context
+namespace LojaDeBrinquedos2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

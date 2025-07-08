@@ -13,7 +13,7 @@ public class ProdutosController : ControllerBase
 {
     private readonly string connectionString = "Server=localhost;Database=meu_banco;User ID=root;Password=Natalli17**;";
 
- 
+
     [HttpGet("listar")]
     public IActionResult Listar()
     {
@@ -40,7 +40,7 @@ public class ProdutosController : ControllerBase
         return Ok(produtos);
     }
 
-  
+
     [HttpPost("adicionar")]
     public IActionResult Adicionar(Produto produto)
     {
@@ -61,7 +61,7 @@ public class ProdutosController : ControllerBase
         return Ok("Produto adicionado com sucesso!");
     }
 
-   
+
     [HttpPut("editar/{id}")]
     public IActionResult Editar(int id, Produto produto)
     {
@@ -87,7 +87,7 @@ public class ProdutosController : ControllerBase
             return NotFound("Produto não encontrado.");
     }
 
-  
+
     [HttpDelete("deletar/{id}")]
     public IActionResult Deletar(int id)
     {

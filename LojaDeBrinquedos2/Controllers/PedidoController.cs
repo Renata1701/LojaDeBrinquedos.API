@@ -30,9 +30,9 @@ public class PedidoController : ControllerBase
 
     public int Id { get; private set; }
     public int IdCliente { get; set; }
-    public DateTime DataPedido { get;set; }
+    public DateTime DataPedido { get; set; }
     public required string Status { get; set; }
-    public required string FormaPagamento { get;set; }
+    public required string FormaPagamento { get; set; }
     public decimal ValorTotal { get; set; }
 
     [HttpGet]
@@ -50,7 +50,7 @@ public class PedidoController : ControllerBase
         return Ok(pedido);
     }
 
-    
+
     [HttpPost]
     public ActionResult<PedidoController> Criar([FromBody] PedidoCreateDto novoDto)
     {

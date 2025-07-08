@@ -21,19 +21,19 @@ public class PagamentoController : ControllerBase
 
     public int Id { get; set; }
     public int IdPedido { get; set; }
-    public required string TipoPagamento { get;set; }
+    public required string TipoPagamento { get; set; }
     public required string Status { get; set; }
     public DateTime DataPagamento { get; set; }
     public decimal Valor { get; set; }
 
-    
+
     [HttpGet]
     public ActionResult<IEnumerable<PagamentoController>> ObterTodos()
     {
         return Ok(_pagamentos);
     }
 
-   
+
     [HttpGet("{id}")]
     public ActionResult<PagamentoController> ObterPorId(int id)
     {
@@ -44,7 +44,7 @@ public class PagamentoController : ControllerBase
         return Ok(pagamento);
     }
 
-   
+
     [HttpPost]
     public ActionResult<PagamentoController> Criar([FromBody] PagamentoCreateDto novoPagamento)
     {
@@ -62,7 +62,7 @@ public class PagamentoController : ControllerBase
         return CreatedAtAction(nameof(ObterPorId), new { id = pagamento.Id }, pagamento);
     }
 
-  
+
     [HttpPut("{id}")]
     public IActionResult AtualizarStatus(int id, [FromBody] string novoStatus)
     {

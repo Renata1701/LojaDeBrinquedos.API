@@ -6,7 +6,7 @@ namespace LojaDeBrinquedos2.Controllers;
 [ApiController]
 public class EstoqueController : ControllerBase
 {
-    public static List<EstoqueController> estoques = new List<EstoqueController> 
+    public static List<EstoqueController> estoques = new List<EstoqueController>
     {
         new EstoqueController("Carrinho de Controle Remoto", 50, "Prateleira A1"),
         new EstoqueController("Boneca Fashion", 30, "Prateleira B2"),
@@ -35,8 +35,8 @@ public class EstoqueController : ControllerBase
         this.v3 = v3;
     }
 
-    [HttpGet] 
-public IActionResult Get()
+    [HttpGet]
+    public IActionResult Get()
     {
         return Ok(estoques);
     }

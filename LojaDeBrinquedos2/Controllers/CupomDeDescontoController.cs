@@ -10,11 +10,11 @@ public class CupomDeDescontoController(int v1, string v2, int v3, bool v4, DateT
         new CupomDeDescontoController(1, "DESCONTO10", 10, true, DateTime.Now.AddDays(30), true),
         new CupomDeDescontoController(2, "FRETEGRATIS", 20, false, DateTime.Now.AddDays(10), true)
     };
-    public object? Codigo { get;  set; }
-    public object?ValorDesconto { get; set; }
-    public object? Percentual { get;  set; }
-    public object? ValidoAte { get;  set; }
-    public object? Ativo { get;  set; }
+    public object? Codigo { get; set; }
+    public object? ValorDesconto { get; set; }
+    public object? Percentual { get; set; }
+    public object? ValidoAte { get; set; }
+    public object? Ativo { get; set; }
     public int Id { get; set; }
     public int V1 { get; } = v1;
     public string V2 { get; } = v2;
@@ -28,7 +28,7 @@ public class CupomDeDescontoController(int v1, string v2, int v3, bool v4, DateT
     {
         return Ok(cupons);
     }
-   
+
     [HttpGet("{id}")]
     public IActionResult BuscarPorId(int id)
     {
@@ -46,7 +46,7 @@ public class CupomDeDescontoController(int v1, string v2, int v3, bool v4, DateT
         cupons.Add(novo);
         return CreatedAtAction(nameof(BuscarPorId), new { id = novo.Id }, novo);
     }
-   
+
     [HttpPut("{id}")]
     public IActionResult Atualizar(int id, [FromBody] CupomDeDescontoController atualizado)
     {
@@ -62,7 +62,7 @@ public class CupomDeDescontoController(int v1, string v2, int v3, bool v4, DateT
 
         return Ok(cupom);
     }
-  
+
     [HttpDelete("{id}")]
     public IActionResult Deletar(int id)
     {

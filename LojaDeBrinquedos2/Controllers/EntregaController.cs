@@ -22,7 +22,7 @@ public class EntregaController : ControllerBase
 
     public int Id { get; private set; }
     public required string Status { get; set; }
-    public required object? DataEnvio { get;  set; }
+    public required object? DataEnvio { get; set; }
     public required object? DataEntrega { get; set; }
     public int IdPedido { get; set; }
     public int IdTransportadora { get; set; }
