@@ -61,9 +61,9 @@ public class CategoriaProduto : ControllerBase
     [HttpDelete("{id}")]
     public IActionResult ExcluirCategoria(int id)
     {
-        var categoria = categorias.FirstOrDefault(c => c.Id == id);
-        if (categoria == null)
-            return NotFound(new { mensagem = "Categoria não encontrada para exclusão." });
+     var categoria = categorias.FirstOrDefault(c => c.Id == id);
+      if (categoria == null)
+      return NotFound(new { mensagem = "Categoria não encontrada para exclusão." });
 
         categorias.Remove(categoria);
         return NoContent();
